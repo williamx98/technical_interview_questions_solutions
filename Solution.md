@@ -3,10 +3,9 @@
 [Question Link]()  
 
 
+##### Constraints:
 
-##### Contraints:
-
-### Explaination:
+### Explanation:
 TLDR: 
 
 ### Notes:
@@ -15,6 +14,7 @@ TLDR:
 ## Solution With Comments:
 ```Python
 
+            
 ```
 
 ## Solution Without Comments:

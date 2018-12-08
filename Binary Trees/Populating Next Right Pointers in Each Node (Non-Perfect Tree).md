@@ -20,11 +20,11 @@ struct TreeLinkNode {
 Populate each next pointer to point to its next right node. If there is no next right node, the next pointer should be set to NULL.
 Initially, all next pointers are set to NULL.
 
-Contraints:
+Constraints:
 You may only use constant extra space.
 Recursive approach is fine, implicit stack space does not count as extra space for this problem.
 
-### Explaination:
+### Explanation:
 TLDR: Making a linkedlist via the children nodes of the current level's linkedlist.
 
 This solution is a top-down, level-order approach.  
