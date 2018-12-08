@@ -1,7 +1,12 @@
-# Populating Next Right Pointers in Each Node (Non-Perfect Tree)
+# Populating Next Right Pointers in Each Node (Any Tree)
 
-[Question Link](https://leetcode.com/explore/learn/card/data-structure-tree/133/conclusion/1016/)  
+[Question Link](https://leetcode.com/explore/learn/card/data-structure-tree/133/conclusion/1016/)
 
+A variation of this same question can be found here:
+[Question Link](https://leetcode.com/explore/learn/card/data-structure-tree/133/conclusion/994/)  
+The difference is that the tree in this variant is a perfect tree meaning that every parent node has a left AND right child and all leaves are at the same level.  
+This solution will work for both and there is actually no code in this solution that wouldn't be used in this variation of the question.
+i.e the logic applies for both questions so even though there is "extra" work necessary for a non-perfect tree, all of the code will still be used.
 
 Given a binary tree
 ```Python
@@ -82,7 +87,7 @@ class Solution:
                 nxtLvlPointer = dummyNxtLvlHolder
 ```
 
-## Solution With Comments:
+## Solution Without Comments:
 ```Python
 class Solution:
     def connect(self, root):
