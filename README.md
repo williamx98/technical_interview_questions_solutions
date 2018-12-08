@@ -3,7 +3,7 @@ Here, you will find solutions to techinical questions that I have used as I prep
 
 Solutions are separated by the question type.  
 
-Within each solutions file, you will find the 2 versions of the solution: one with comments, one without. You will also find a README of the question and the source link to the question.  
+Within each solutions file, you will find the 2 versions of the solution: one with comments, one without. You will also find the question and the source link to the question.  
 
 Not only is this repo meant for me to keep track of my work, it is also for you, reader, who may be on a similar journey I am on and share a similar design philosophy.
 
@@ -34,7 +34,9 @@ Also also, by avoiding the use of built-ins for specific languages, solutions ar
 
 Of course, this also helps to keep programs smaller in size as the more imports are necessary, the more extraneous class variables and methods are included as a part of the file.
 
-Also also also, solutions will often be at the optimal solution, where time complexity is at its fastest and space complexity is at its lowest.
+Also also also, solutions will often be at the optimal solution, where time complexity is at its fastest and space complexity is at its lowest.  
+
+Note: Many solutions will be in `Python` and I will occasionally use the shortcuts avaible in `Python` for arrays i.e `[-1]` instead of `[lenghth - 1]`. This is the only break from the design philisophy because it helps improve readability and is the least trivial in function.
 
 #### To recurse or to not recurse
 I have been told that those who learn recursion first, have trouble understanding iterative solutions while those who learn iteration first, have trouble understanding recursive solutions. Now, I am not all too sure how true that is for everyone but, I know this is the case for me. I have never actually met anyone who has learned recursion first before learning iteration...
