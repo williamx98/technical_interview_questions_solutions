@@ -49,4 +49,4 @@ However, just because I have trouble with recursion doesn't mean I don't want to
 If you find a bug, want to say thank you, or give me a job, my contact details are below:  
 [LinkedIn: linkedin.com/in/willx98](https://linkedin.com/in/willx98)  
 [GitHub: github.com/willx98](https://github.com/willx98)  
-[website: willxu.site](https://willxu.site)
+[Website: willxu.site](https://willxu.site)
