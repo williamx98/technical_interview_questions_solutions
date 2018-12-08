@@ -3,8 +3,13 @@ Here, you will find solutions to techinical questions that I have used as I prep
 
 Solutions are separated by the question type.  
 
-Within seach solutions file, you will find the 2 verions of the solution: one with comments, one without.  
-You will also find a README of the question and the source link to the question.  
+Within each solutions file, you will find the 2 versions of the solution: one with comments, one without. You will also find a README of the question and the source link to the question.  
+
+Not only is this repo meant for me to keep track of my work, it is also for you, reader, who may be on a similar journey I am on and share a similar design philosophy.
+
+After having visited numerous StackOverflow posts and many different websites in search of solutions, I feel compelled to create a solutions database that has only what is necessary. No ads, no extraneous explanations or convoluted summaries trying to be smarter than is necessary. I am a big fan of minimalism and this is my contribution to the computer science world: a straight-forward, concise, and consistent solutions database aimed at helping the reader understand the solution as quickly as possible.
+
+I don't intend on trying to say any of these solutions are the "right" solution. There is always more than one solution and it would be naive of me to think I hold any authority on what is right and what is wrong. These solutions are written to be best understood by me and if you happen to have a similar mindset, then these solutions may just be what you need to answer that question you have spent the last 45 minutes on.
 
 ---
 
