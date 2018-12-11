@@ -12,7 +12,7 @@ TLDR: Traverse in-order and keep track of what number element you are on via a o
 ### Notes:
 
 
-## Solution (Python):
+## Solution (Python Recursive):
 ```Python
 # Definition for a binary tree node.
 # class TreeNode(object):
@@ -44,6 +44,37 @@ class Solution(object):
             
             
         return recurse(root, [k]) 
+```
+
+## Solution (Python Iterative):
+```Python
+# Definition for a binary tree node.
+# class TreeNode(object):
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
+
+class Solution(object):
+    def kthSmallest(self, root, k):
+        """
+        :type root: TreeNode
+        :type k: int
+        :rtype: int
+        """
+        stack = []
+        current = root
+        
+        while stack or current:
+            if current:
+                stack.append(current)
+                current = current.left
+            else:
+                current = stack.pop()
+                k -= 1
+                if k == 0:
+                    return current.val
+                current = current.right
 ```
 
 ## Solution (Java):
