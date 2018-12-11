@@ -59,24 +59,26 @@ class Solution(object):
  */
 class Solution {
     public int kthSmallest(TreeNode root, int k) {
-        int[] count = {k};
-        return this.recurse(root, count).intValue();
+        int[] res = new int[2];
+        res[0] = k;
+        find(root, res);
+        return res[1];
     }
     
-    public Integer recurse(TreeNode node, int[] k) {
-        if (node == null)
-            return null;
+    private boolean find(TreeNode root, int[] res){
+        if (root == null) 
+            return false;
         
-        Integer left = recurse(node.left, k);
-        if (left != null)
-            return left;
+        if (find(root.left, res))
+            return true;
         
-        k[0]--;
-        if (k[0] == 0)
-            return new Integer(node.val);
-    
-        return recurse(node.right, k);
+        res[0]--;
+        if(res[0] == 0) {
+            res[1] = root.val;
+            return true;
+        }
         
+        return find(root.right, res);
     }
 }
 ```
