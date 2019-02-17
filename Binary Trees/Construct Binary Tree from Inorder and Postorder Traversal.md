@@ -11,7 +11,7 @@ You may assume that duplicates do not exist in the tree.
 ### Explaination:
 TLDR: Use the postorder list to figure out which node is the parent node. Then, find the parent node in the inorder list to figure which nodes are the left subtree and the right subtree.  
 
-The parent node will always be the last node of a preorder traversal.  
+The parent node will always be the last node of a postorder traversal.  
 The same parent node within the inorder traversal will split the inorder list into the two inorder lists of the left subtree and the right subtree.  
 Recursively apply the same logic to both subtrees to create the entire tree
 
