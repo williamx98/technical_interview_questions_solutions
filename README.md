@@ -7,7 +7,7 @@ Optimal solutions, in my opinion, are solutions that can be easily replicated in
 ## Contact
 If you find a bug, want to say thank you, or give me a job, my contact details are below:  
 
+[ Website: willx.org](https://willx.org)  
 [LinkedIn: willx.org/linkedin](https://willx.org/linkedin)  
-[GitHub: willx.org/github](https://willx.org/github)  
-[Resume: willx.org/resume](https://willx.org/resume)  
-[Website: willx.org](https://willx.org)
+[  GitHub: willx.org/github](https://willx.org/github)  
+[  Resume: willx.org/resume](https://willx.org/resume)  
