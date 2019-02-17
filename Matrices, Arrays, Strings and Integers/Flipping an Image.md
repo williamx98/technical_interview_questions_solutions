@@ -16,7 +16,7 @@ TLDR:
 ### Notes:
 
 
-## Solution With Comments:
+## Solution:
 ```Python
 class Solution(object):
     def flipAndInvertImage(self, A):
@@ -24,15 +24,19 @@ class Solution(object):
         :type A: List[List[int]]
         :rtype: List[List[int]]
         """
-        flippedMatrix = []
-        
         for row in A:
-            flippedRow = []
-            for col in row[::-1]:
-                if col == 1:
-                    flippedRow.append(0)
-                else:
-                    flippedRow.append(1)
-            flippedMatrix.append(flippedRow)
-        return flippedMatrix
+            left = 0
+            right = len(row) - 1
+            
+            while left <= right:
+                if row[left] == row[right]:
+                    row[left] = (row[left] + 1) % 2
+                    # dont set the right when left == right because its already been flipped
+                    if left != right:
+                        row[right] = (row[right] + 1) % 2
+                
+                left = left + 1
+                right = right - 1
+                
+        return A
 ```

@@ -24,9 +24,12 @@ class Solution(object):
         lowerOffset = (ord('a') - ord('A'))
         A = ord('A')
         Z = ord('Z')
+
         for index in range(len(str)):
             s = str[index]
-            if ord(s) >= A and ord(s) <= Z:
-                str[index] = chr(ord(s) + lowerOffset)
+            val = ord(s)
+            if val >= A and val <= Z:
+                str[index] = chr(val + lowerOffset)
+
         return ''.join(str)   
 ```

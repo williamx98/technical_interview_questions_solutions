@@ -11,13 +11,7 @@ TLDR:
 ### Notes:
 
 
-## Solution With Comments:
-```Python
-
-            
-```
-
-## Solution Without Comments:
+## Solution:
 ```Python
 
 ```

@@ -11,12 +11,12 @@ Note: The way that the robot is "facing" is irrelevant. "R" will always make the
 ##### Constraints:
 
 ### Explanation:
-TLDR: All we care about is the over direction change which can be tracked with two variables defining the axis we can move in.
+TLDR: All we care about is the overall direction change which can be tracked with two variables defining the axis we can move in.
 
 ### Notes:
 
 
-## Solution With Comments:
+## Solution:
 ```Python
 class Solution(object):
     def judgeCircle(self, moves):

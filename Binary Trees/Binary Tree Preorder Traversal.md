@@ -32,20 +32,20 @@ class Solution(object):
 ```Python
 class Solution(object):
     def preorderTraversal(self, root):
-        answer = []
+        if root is None:
+            return []
         
-        lefts = []
-        current = root
-        while lefts or current:
-            # go as far left as possible adding the current to the travel stack
-            if current:
-                lefts.append(current)
-                answer.append(current.val)
-                current = current.left
-            # then start going right after moving up the lefts (moving up the stack of left nodes)
-            else:
-                current = lefts.pop()
-                current = current.right
+        answer = []
+        stack = [root]
+        while stack:
+            current = stack.pop()
+            answer.append(current.val)
+
+            if current.right:
+                stack.append(current.right)
+
+            if current.left:
+                stack.append(current.left)
         
         return answer
 ```

@@ -15,15 +15,8 @@ This will be a bottom-up approach, going as far down as possible and evaluating 
 ### Notes:
 
 
-## Solution With Comments:
+## Solution (Recursive):
 ```Python
-# Definition for a binary tree node.
-# class TreeNode(object):
-#     def __init__(self, x):
-#         self.val = x
-#         self.left = None
-#         self.right = None
-
 class Solution(object):
     def maxDepth(self, root):
         """
@@ -47,23 +40,32 @@ class Solution(object):
         return recurse(root)
 ```
 
-## Solution Without Comments:
+## Solution (Iterative):
 ```Python
 class Solution(object):
     def maxDepth(self, root):
-        def recurse(node):
-            if not node:
-                return 0
-            
-            # get the length of the left subtree and the right subtree
-            leftSubDepth = 1 + recurse(node.left)
-            rightSubDepth = 1 + recurse(node.right)
-            
-            max = leftSubDepth
-            if rightSubDepth > max:
-                max = rightSubDepth
-                
-            return max
+        """
+        :type root: Node
+        :rtype: int
+        """
+        if root is None:
+            return 0
         
-        return recurse(root)
+        level = 0
+        toVisit = [root]
+        
+        while toVisit:
+            newVisit = []
+            level += 1
+            while toVisit:
+                visit = toVisit.pop()
+                if visit.left:
+                    newVisit.append(visit.left)
+
+                if visit.right:
+                    newVisit.append(visit.right)
+            
+            toVisit = newVisit
+            
+        return level
 ```

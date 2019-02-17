@@ -18,7 +18,7 @@ Recursively apply the same logic to both subtrees to create the entire tree
 ### Notes:
 
 
-## Solution With Comments:
+## Solution:
 ```Python
 # Definition for a binary tree node.
 # class TreeNode(object):
@@ -47,31 +47,6 @@ class Solution(object):
         	
    			# The parent node will always be the first node of a preorder traversal.  
 			# The same parent node within the inorder traversal will split the inorder list into the two inorder lists of the left subtree and the right subtree.  
-            leftTreeIn = inorder[:newNodeIn]
-            leftTreePo = preorder[1:newNodeIn + 1]
-            
-            rightTreeIn = inorder[newNodeIn + 1:]
-            rightTreePo = preorder[newNodeIn + 1:]
-            
-            newNode = TreeNode(newNodeVal)
-            newNode.left = recurse(leftTreePo, leftTreeIn)
-            newNode.right = recurse(rightTreePo, rightTreeIn)
-            return newNode
-        
-        return recurse(preorder, inorder)
-```
-
-## Solution Without Comments:
-```Python
-class Solution(object):
-    def buildTree(self, preorder, inorder):
-        def recurse(preorder, inorder):
-            if len(preorder) == 0 or len(inorder) == 0:
-                return None
-            
-            newNodeVal = preorder[0]
-            newNodeIn = inorder.index(newNodeVal)
-
             leftTreeIn = inorder[:newNodeIn]
             leftTreePo = preorder[1:newNodeIn + 1]
             

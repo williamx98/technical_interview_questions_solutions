@@ -24,7 +24,7 @@ TLDR:
 ### Notes:
 
 
-## Solution With Comments:
+## Solution:
 ```Python
 class Solution(object):
     def numUniqueEmails(self, emails):
@@ -32,18 +32,19 @@ class Solution(object):
         :type emails: List[str]
         :rtype: int
         """
-        uniqueEmails = set()
-        
+        answer = set();
         for email in emails:
-            email = email.split("@")
-            localName = email[0].split("+")[0].replace(".", "")
-            domain = email[1]
-            uniqueEmails.add(localName + domain)
-        
-        return len(uniqueEmails)   
-```
-
-## Solution Without Comments:
-```Python
-
+            split = email.split("@")
+            
+            local = split[0]
+            domain = split[1]
+            
+            local = local.split("+")[0]
+            local = local.replace(".", "")
+            
+            newEmail = local + "@" + domain
+            
+            answer.add(newEmail)
+            
+        return len(answer)  
 ```

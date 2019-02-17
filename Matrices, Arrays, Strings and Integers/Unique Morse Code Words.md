@@ -21,7 +21,7 @@ Return the number of different transformations among all words we have.
 ### Notes:
 
 
-## Solution With Comments:
+## Solution:
 ```Python
 class Solution(object):
     def uniqueMorseRepresentations(self, words):
@@ -29,17 +29,22 @@ class Solution(object):
         :type words: List[str]
         :rtype: int
         """
-        uniqueTransformations = set()
-        letterToMorse = [".-","-...","-.-.","-..",".","..-.","--.","....","..",".---","-.-",".-..","--","-.","---",".--.","--.-",".-.","...","-","..-","...-",".--","-..-","-.--","--.."]
-        a = ord('a')
+        morse = [".-","-...","-.-.","-..",".","..-.","--.","....","..",".---","-.-",".-..","--","-.","---",".--.","--.-",".-.","...","-","..-","...-",".--","-..-","-.--","--.."]
+        
+        
+        answerSet = set()
+        
+        def wordToMorse(word):
+            code = []
+            for c in word:
+                index = ord(c) - ord('a')
+                code.append(morse[index])
+                
+            code = ''.join(code)
+            return code
         
         for word in words:
-            morseTrans = []
-            for c in word:
-                index = ord(c) - a
-                morseTrans.append(letterToMorse[index])
-            uniqueTransformations.add(''.join(morseTrans))
-        
-        return len(uniqueTransformations)
-    
+            answerSet.add(wordToMorse(word))
+            
+        return len(answerSet)
 ```

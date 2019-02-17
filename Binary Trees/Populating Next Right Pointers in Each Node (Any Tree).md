@@ -38,7 +38,7 @@ It assumes that current level has been correctly "connected" which will always b
 You don't have to set each level's right-most-node's `next` manually. When the tree was made, all of the nodes had their `next` pointers set to `NULL` so once you connect the second right-most node of the level, there is no need to set the right-most node since it's already pointing to the correct value (`NUll`)
 
 
-## Solution With Comments:
+## Solution:
 ```Python
 # Definition for binary tree with next pointer.
 # class TreeLinkNode:
@@ -81,34 +81,6 @@ class Solution:
             
             # when there are no more pointers left on the current level, it can be concluded that the next level's nodes have ALL been connected
             # This implies it is time to move down to the next level, and assemble the next level's, next level's "linkedlist" 
-            if currLvlPointer is None:
-                currLvlPointer = dummyNxtLvlHolder.next
-                dummyNxtLvlHolder = TreeLinkNode(0)
-                nxtLvlPointer = dummyNxtLvlHolder
-```
-
-## Solution Without Comments:
-```Python
-class Solution:
-    def connect(self, root):
-        if not root:
-            return
-
-        currLvlPointer = root
-        dummyNxtLvlHolder = TreeLinkNode(0)
-        nxtLvlPointer = dummyNxtLvlHolder
-        
-        while currLvlPointer:
-            if currLvlPointer.left:
-                nxtLvlPointer.next = currLvlPointer.left
-                nxtLvlPointer = nxtLvlPointer.next
-        
-            if currLvlPointer.right:
-                nxtLvlPointer.next = currLvlPointer.right
-                nxtLvlPointer = nxtLvlPointer.next
-            
-            currLvlPointer = currLvlPointer.next
-            
             if currLvlPointer is None:
                 currLvlPointer = dummyNxtLvlHolder.next
                 dummyNxtLvlHolder = TreeLinkNode(0)

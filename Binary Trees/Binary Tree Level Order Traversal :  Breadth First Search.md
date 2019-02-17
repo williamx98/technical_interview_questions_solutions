@@ -63,6 +63,66 @@ class Solution(object):
         return answer
 ```
 
+## Iterative (Per-Level Separation):
+```Python
+class Solution(object):
+    def levelOrder(self, root):
+        """
+        :type root: TreeNode
+        :rtype: List[List[int]]
+        """
+        if not root:
+            return []
+        
+        answer = []
+        toVisit = [root]
+        
+        while toVisit:
+            newVisit = []
+            newLevel = []
+            while toVisit:
+                visit = toVisit[0]
+                del toVisit[0]
+                newLevel.append(visit.val)
+                
+                if visit.left:
+                    newVisit.append(visit.left)
+                
+                if visit.right:
+                    newVisit.append(visit.right)
+                
+            toVisit = newVisit
+            answer.append(newLevel)
+            
+        return answer
+```
+
+## Iterative (No Per-Level Separation):
+```Python
+class Solution(object):
+    def levelOrder(self, root):
+        """
+        :type root: TreeNode
+        :rtype: List[List[int]]
+        """
+        if not root:
+            return []
+        
+        answer = []
+        toVisit = [root]
+        while toVisit:
+            node = toVisit[0]
+            del toVisit[0]
+            answer.append(node.val)
+                
+            if node.left:
+                toVisit.append(node.left)
+            if node.right:
+                toVisit.append(node.right)
+
+        return answer
+```
+
 ## Variant (No Per-Level Separation):
 ```Python
 class Solution:

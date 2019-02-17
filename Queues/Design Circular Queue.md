@@ -27,7 +27,7 @@ TLDR:
 ### Notes:
 
 
-## Solution With Comments:
+## Solution:
 ```Python
 class MyCircularQueue(object):
 
@@ -100,52 +100,5 @@ class MyCircularQueue(object):
         Checks whether the circular queue is full or not.
         :rtype: bool
         """
-        return self.size == self.length
-```
-
-## Solution Without Comments:
-```Python
-class MyCircularQueue(object):
-
-    def __init__(self, k):
-        self.length = k
-        self.data = [None] * k
-        self.headIn = 0
-        self.endIn = -1
-        self.size = 0
-
-    def enQueue(self, value):
-        if self.isFull():
-            return False
-
-        self.endIn = (self.endIn + 1) % self.length
-        self.data[self.endIn] = value
-        self.size += 1
-        return True
-        
-    def deQueue(self):
-        if self.isEmpty():
-            return False
-        
-        self.headIn = (self.headIn + 1) % self.length
-        self.size -= 1
-        return True
-
-    def Front(self):
-        if self.isEmpty():
-            return -1
-        
-        return self.data[self.headIn]
-
-    def Rear(self):
-        if self.isEmpty():
-            return -1
-        
-        return self.data[self.endIn]
-
-    def isEmpty(self):
-        return self.size == 0
-    
-    def isFull(self):
         return self.size == self.length
 ```

@@ -18,7 +18,7 @@ Recursively apply the same logic to both subtrees to create the entire tree
 ### Notes:
 
 
-## Solution With Comments:
+## Solution:
 ```Python
 # Definition for a binary tree node.
 # class TreeNode(object):
@@ -54,36 +54,6 @@ class Solution(object):
             rightTreePo = postorder[newNodeIn: -1]
             
             newNode = TreeNode(newNodeVal)
-            newNode.left = recurse(leftTreeIn, leftTreePo)
-            newNode.right = recurse(rightTreeIn, rightTreePo)
-            
-            return newNode
-    
-        return recurse(inorder, postorder)
-```
-
-## Solution Without Comments:
-```Python
-class Solution(object):
-    def buildTree(self, inorder, postorder):
-        def recurse(inorder, postorder):
-            if len(inorder) == 0:
-                return None
-            
-            if len(postorder) == 0:
-                return None
-
-            newNodeVal = postorder[-1]
-            newNodeIn = inorder.index(newNodeVal)
-            
-            newNode = TreeNode(newNodeVal)
-            
-            leftTreeIn = inorder[:newNodeIn]
-            leftTreePo = postorder[:newNodeIn]
-            
-            rightTreeIn = inorder[newNodeIn + 1:]
-            rightTreePo = postorder[newNodeIn: -1]
-            
             newNode.left = recurse(leftTreeIn, leftTreePo)
             newNode.right = recurse(rightTreeIn, rightTreePo)
             

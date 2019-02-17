@@ -14,7 +14,7 @@ TLDR: Use a modified bucket sort to search by word counts and not just words. Th
 ### Notes:
 
 
-## Solution With Comments:
+## Solution:
 ```Python
 class Solution(object):
     def topKFrequent(self, words, k):

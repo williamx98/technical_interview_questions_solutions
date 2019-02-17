@@ -12,7 +12,7 @@ TLDR: Go through both trees at the same time checking first for matching childre
 ### Notes:
 
 
-## Solution With Comments:
+## Solution:
 ```Python
 # Definition for a binary tree node.
 # class TreeNode(object):
@@ -50,26 +50,4 @@ class Solution(object):
         
         return recursive(root.left, root.right)
             
-```
-
-## Solution Without Comments:
-```Python
-class Solution(object):
-    def isSymmetric(self, root):
-        if not root:
-            return True
-        
-        def recursive(leftTreeNode, rightTreeNode):
-            if not leftTreeNode and not rightTreeNode:
-                return True
-
-            if not leftTreeNode or not rightTreeNode:
-                return False
-            
-            if leftTreeNode.val != rightTreeNode.val:
-                return False
-            
-            return recursive(leftTreeNode.left, rightTreeNode.right) and recursive(leftTreeNode.right, rightTreeNode.left)
-        
-        return recursive(root.left, root.right)
 ```

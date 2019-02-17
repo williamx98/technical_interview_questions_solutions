@@ -47,6 +47,6 @@ However, just because I have trouble with recursion doesn't mean I don't want to
 
 ## Contact
 If you find a bug, want to say thank you, or give me a job, my contact details are below:  
-[LinkedIn: linkedin.com/in/willx98](https://linkedin.com/in/willx98)  
-[GitHub: github.com/willx98](https://github.com/willx98)  
-[Website: willxu.site](https://willxu.site)
+[LinkedIn: willx.org/linkedin](https://willx.org/linkedin)  
+[GitHub: willx.org/github](https://willx.org/github)  
+[Website: willx.org](https://willx.org)

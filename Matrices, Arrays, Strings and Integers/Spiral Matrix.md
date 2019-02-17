@@ -16,7 +16,7 @@ This solution was inspired by the game Snake, where a snake will travel indefini
 ### Notes:
 
 
-## Solution With Comments:
+## Solution:
 ```Python
 class Solution(object):
     def spiralOrder(self, array):

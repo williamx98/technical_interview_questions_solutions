@@ -14,7 +14,7 @@ If its not a leaf, try to find a possible path using the left subtree and then t
 ### Notes:
 
 
-## Solution With Comments:
+## Solution:
 ```Python
 # Definition for a binary tree node.
 # class TreeNode(object):
@@ -39,28 +39,12 @@ class Solution(object):
             if not currentNode:
                 return False
             
+            # node is child, check if sum found
             if not currentNode.left and not currentNode.right:
                 return total - currentNode.val == 0
             
-            return recurse(currentNode.left, total - currentNode.val) or recurse(currentNode.right, total - currentNode.val)
-        
-        return recurse(root, sum)
-```
-
-## Solution Without Comments:
-```Python
-class Solution(object):
-    def hasPathSum(self, root, sum):
-        if not root:
-            return False
-        
-        def recurse(currentNode, total): 
-            if not currentNode:
-                return False
-            
-            if not currentNode.left and not currentNode.right:
-                return total - currentNode.val == 0
-            
+            # node is not child. temporarily subtract the currentNode value from the left and then the right child nodes 
+            # and send them to the next recurse
             return recurse(currentNode.left, total - currentNode.val) or recurse(currentNode.right, total - currentNode.val)
         
         return recurse(root, sum)

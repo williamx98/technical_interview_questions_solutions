@@ -16,40 +16,35 @@ The serializing of a subtree stops once it reaches a leaf node.
 ### Notes:
 
 
-## Solution With Comments:
+## Solution:
 ```Python
 class Codec:
-	# pretty straight forward. Use preorder to construct and encoded string
+    # pretty straight forward. Use preorder to construct and encoded string
     def serialize(self, root):
-        def recurse(node):
+        def recurse(node, encode):
             if node:
                 encode.append(str(node.val))
-                recurse(node.left)
-                recurse(node.right)
+                recurse(node.left, encode)
+                recurse(node.right, encode)
             else:
-                encode.append('N')
-        encode = []
+                encode.append('#')
+                
+            return encode
         
-        recurse(root)
-        return ' '.join(encode)
+        return ' '.join(recurse(root,[]))
 
     # since we know what order to expexct, perform the exact same preorder traversal but make a tree now
     def deserialize(self, data):
-        def doit(index):
+        def recurse(index, data):
             val = data[index[0]]
             index[0] += 1
             if val == '#':
                 return None
             node = TreeNode(int(val))
-            node.left = doit(index)
-            node.right = doit(index)
+            node.left = recurse(index, data)
+            node.right = recurse(index, data)
             return node
         
-        data = data.split(" ")
-        return doit([0])
-```
-
-## Solution Without Comments:
-```Python
-
+        decode = data.split(" ")
+        return recurse([0], decode)
 ```
