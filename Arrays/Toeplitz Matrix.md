@@ -9,7 +9,7 @@ Now given an M x N matrix, return True if and only if the matrix is Toeplitz.
 ##### Constraints:
 
 ### Explanation:
-TLDR: Check the next row down only and compare to the next col right only
+TLDR: 
 
 ### Notes:
 
