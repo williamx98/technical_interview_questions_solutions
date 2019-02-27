@@ -16,6 +16,41 @@ TLDR:
 
 ## Solution:
 ```Python
+class Solution:
+    def addTwoNumbers(self, l1, l2):
+        stack1 = []
+        stack2 = []
+        p1 = l1
+        p2 = l2
+        
+        while p1:
+            stack1.append(p1.val)
+            p1 = p1.next
+            
+        while p2:
+            stack2.append(p2.val)
+            p2 = p2.next
+            
+        currentHead = None
+        rem = 0
+        while stack1 or stack2 or rem:
+            s = rem
+            if stack1:
+                s += stack1.pop()
+                
+            if stack2:
+                s += stack2.pop()
+            
+            rem = s // 10
+            toAdd = ListNode(s % 10)
+            toAdd.next = currentHead
+            currentHead = toAdd
+            
+        return currentHead
+```
+
+## Solution:
+```Python
 class Solution(object):
     def addTwoNumbers(self, l1, l2):
         """
