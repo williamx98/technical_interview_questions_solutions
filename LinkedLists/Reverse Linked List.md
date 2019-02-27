@@ -21,14 +21,14 @@ class Solution(object):
         :rtype: ListNode
         """
 
-        first = None
-        second = head
+        newHead = None
+        current = head
         
-        while second is not None:
-            third = second.next
-            second.next = first
-            first = second
-            second = third
+        while current is not None:
+            oldNext = current.next
+            current.next = newHead
+            newHead = current
+            current = oldNext
         
-        return first
+        return newHead
 ```
