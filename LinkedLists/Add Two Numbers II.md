@@ -18,29 +18,49 @@ TLDR:
 ```Python
 class Solution(object):
     def addTwoNumbers(self, l1, l2):
-        l1Val = 0
-        l2Val = 0
+        """
+        :type l1: ListNode
+        :type l2: ListNode
+        :rtype: ListNode
+        """
+        def reverse(head):
+            if head is None or head.next is None:
+                return head
         
-        while l1:
-            l1Val = l1Val * 10 + l1.val
-            l1 = l1.next
+            newHead = None
+            current = head
+            while current:
+                oldNext = current.next
+                current.next = newHead
+                newHead = current
+                current = oldNext
+            
+            return newHead
         
-        while l2:
-            l2Val = l2Val * 10 + l2.val
-            l2 = l2.next
         
-        total = l1Val + l2Val
+        l1 = reverse(l1)
+        l2 = reverse(l2)
+
+        carry = 0
+        root = ListNode(0)
+        n = root
         
-        prev = None
+        while l1 or l2 or carry:
+            v1 = 0
+            v2 = 0
+            if l1:
+                v1 = l1.val
+                l1 = l1.next
+            if l2:
+                v2 = l2.val
+                l2 = l2.next
+            
+            total = v1+v2+carry
+            carry = total // 10
+            val = total % 10
+            
+            n.next = ListNode(val)
+            n = n.next
         
-        if total is 0:
-            return ListNode(0)
-        
-        while total > 0:
-            node = ListNode(total % 10)
-            node.next = prev
-            prev = node
-            total //= 10
-        
-        return prev
+        return reverse(root.next)
 ```
