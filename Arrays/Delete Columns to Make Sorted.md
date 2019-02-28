@@ -1,8 +1,7 @@
 # Delete Columns to Make Sorted
+### Rating: [2/5] Terribly worded description on LeetCode. Good for practicing matrix traversal.
 
 [Question Link](https://leetcode.com/problems/delete-columns-to-make-sorted/)  
-
-This has a terrible explanation on LeetCode:
 
 We are given an array A of N lowercase letter strings, all of the same length.  
 
@@ -14,14 +13,8 @@ Suppose we chose a set of deletion indices D such that after deletions, each rem
 
 Return the minimum possible value of D.length.  
 
-
-##### Constraints:
-
 ### Explanation:
 TLDR: Find the number of columns where the it is not sorted from least to greatest columnwise
-
-### Notes:
-
 
 ## Solution:
 ```Python
