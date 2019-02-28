@@ -1,4 +1,5 @@
 # Available Captures for Rook  
+### Rating: [2/5] Good intro into matrix traversal. Somewhat convoluted.
 
 [Question Link](https://leetcode.com/problems/available-captures-for-rook/)  
 
@@ -8,13 +9,8 @@ The rook moves as in the rules of Chess: it chooses one of four cardinal directi
 
 Return the number of pawns the rook can capture in one move.  
 
-##### Constraints:
-
 ### Explanation:
-TLDR: 
-
-### Notes:
-
+TLDR: Traversal in the possible directions until either a piece (of any type is found) or the end of the board is reached.  Add one if you ran into an opposing piece.  
 
 ## Solution:
 ```Python
