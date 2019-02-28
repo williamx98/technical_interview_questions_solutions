@@ -1,5 +1,5 @@
 # 1-bit and 2-bit Characters  
-## Rating: [1/5] Just another convoluted question. Safe to ignore for interview prep.
+### Rating: [1/5] Just another convoluted question. Safe to ignore for interview prep.
 
 [Question Link](https://leetcode.com/problems/1-bit-and-2-bit-characters/)  
 
