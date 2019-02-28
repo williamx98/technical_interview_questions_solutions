@@ -1,4 +1,5 @@
 # Baseball Game  
+### Rating: [2/5] Basic problem. Not much to learn.
 
 [Question Link](https://leetcode.com/problems/baseball-game/)  
 
@@ -17,9 +18,7 @@ You need to return the sum of the points you could get in all the rounds.
 ##### Constraints:
 
 ### Explanation:
-TLDR: 
-
-### Notes:
+TLDR: Basic conditional handling.  
 
 
 ## Solution:
