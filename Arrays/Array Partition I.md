@@ -1,5 +1,5 @@
 # Array Partition I
-### Rating: [2/5] Good intro to arrays. Useless for learning unless you're an absolute beginner.
+### Rating: [2/5] Good intro to arrays. Useless for learning unless you're an absolute beginner.  
 [Question Link](https://leetcode.com/problems/array-partition-i/)  
 
 Given an array of 2n integers, your task is to group these integers into n pairs of integer, say (a1, b1), (a2, b2), ..., (an, bn) which makes sum of min(ai, bi) for all i from 1 to n as large as possible.    
