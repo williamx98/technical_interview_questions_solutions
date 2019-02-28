@@ -6,7 +6,7 @@
 Write a function to delete a node (except the tail) in a singly linked list, given only access to that node.  
 
 ### Explanation:
-TLDR: 
+TLDR: What most people know of deleting a node is to connect the previous node to the next node. In this problem, there is no access to the previous node so it's easy to be thrown off by that fact.
 
 ## Solution:
 ```Python
