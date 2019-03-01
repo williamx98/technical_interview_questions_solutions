@@ -6,13 +6,8 @@ A matrix is Toeplitz if every diagonal from top-left to bottom-right has the sam
 
 Now given an M x N matrix, return True if and only if the matrix is Toeplitz.  
 
-##### Constraints:
-
 ### Explanation:
 TLDR: 
-
-### Notes:
-
 
 ## Solution:
 ```Python
