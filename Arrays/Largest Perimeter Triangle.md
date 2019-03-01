@@ -6,48 +6,11 @@ Given an array A of positive lengths, return the largest perimeter of a triangle
 
 If it is impossible to form any triangle of non-zero area, return 0.  
 
-##### Constraints:
-
 ### Explanation:
-TLDR: 
-
-### Notes:
-
+TLDR: Sort the edges, chose the largest three that can form a triangle.
 
 ## Solution:
 ```Python
-#         def sort(array):
-#             if len(array) <= 1:
-#                 return array
-            
-#             mid = len(array)//2
-        
-#             sortedLeft = sort(array[0:mid])
-#             sortedRight = sort(array[mid:len(array)])
-            
-#             mergedSorted = []
-                
-#             l = 0
-#             r = 0
-            
-#             leftLength = len(sortedLeft)
-#             rightLength = len(sortedRight)
-            
-#             while l < leftLength or r < rightLength:
-#                 valueToAppend = None
-#                 if l < leftLength and (r >= rightLength or sortedLeft[l] >= sortedRight[r]):
-#                     valueToAppend = sortedLeft[l]
-#                     l = l + 1
-#                 else:
-#                     valueToAppend = sortedRight[r]
-#                     r = r + 1
-                    
-#                 mergedSorted.append(valueToAppend)
-            
-#             return mergedSorted
-        
-#         sorted = sort(A)
-        
         A.sort(reverse = True)
         
         sorted = A
