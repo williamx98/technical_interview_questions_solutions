@@ -15,9 +15,6 @@ The parent node will always be the first node of a preorder traversal.
 The same parent node within the inorder traversal will split the inorder list into the two inorder lists of the left subtree and the right subtree.  
 Recursively apply the same logic to both subtrees to create the entire tree
 
-### Notes:
-
-
 ## Solution:
 ```Python
 # Definition for a binary tree node.
