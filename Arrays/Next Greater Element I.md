@@ -6,13 +6,8 @@ You are given two arrays (without duplicates) nums1 and nums2 where nums1’s el
 
 The Next Greater Number of a number x in nums1 is the first greater number to its right in nums2. If it does not exist, output -1 for this number.  
 
-##### Constraints:
-
 ### Explanation:
-TLDR: Go backwards on nums. While there are items on the stack, pop if the stack top is less than the current number. Then associate the current number to the stop of the stack (the element greater than it)
-
-### Notes:
-
+TLDR: Go backwards on nums. While there are items on the stack, pop until the current number is greater than the top of stack. Then associate the current number to the top of the stack (the element greater than it)
 
 ## Solution:
 ```Python
