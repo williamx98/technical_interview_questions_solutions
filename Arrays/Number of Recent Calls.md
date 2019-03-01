@@ -11,13 +11,8 @@ Any ping with time in [t - 3000, t] will count, including the current ping.
 
 It is guaranteed that every call to ping uses a strictly larger value of t than before.  
 
-##### Constraints:
-
 ### Explanation:
 TLDR: On every ping, find the timestamp for which an earlier pings should be deleted.  
-
-### Notes:
-
 
 ## Solution:
 ```Python
