@@ -9,8 +9,6 @@ Find all the elements of [1, n] inclusive that do not appear in this array.
 
 Could you do it without extra space and in O(n) runtime? You may assume the returned list does not count as extra space.  
 
-##### Constraints:
-
 ### Explanation:
 TLDR: Use the value at each index to mark the index indicated by the value as seen. The index of the remaining elements that are not negative should be appended to your answer.
 
