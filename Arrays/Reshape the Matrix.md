@@ -10,13 +10,8 @@ The reshaped matrix need to be filled with all the elements of the original matr
 
 If the 'reshape' operation with given parameters is possible and legal, output the new reshaped matrix; Otherwise, output the original matrix.  
 
-##### Constraints:
-
 ### Explanation:
 TLDR: 
-
-### Notes:
-
 
 ## Solution:
 ```Python
