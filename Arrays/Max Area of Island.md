@@ -6,13 +6,8 @@ Given a non-empty 2D array grid of 0's and 1's, an island is a group of 1's (rep
 
 Find the maximum area of an island in the given 2D array. (If there is no island, the maximum area is 0.)  
 
-##### Constraints:
-
 ### Explanation:
-TLDR: 
-
-### Notes:
-
+TLDR: Using basic BFS to find connected components
 
 ## Solution:
 ```Python
