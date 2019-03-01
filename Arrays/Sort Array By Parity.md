@@ -33,3 +33,25 @@ class Solution(object):
                 i += 1
         return A
 ```
+
+```Python
+class Solution(object):
+    def sortArrayByParity(self, A):
+        """
+        :type A: List[int]
+        :rtype: List[int]
+        """
+        index = 0
+        swapSize = 0
+        
+        while index + swapSize < len(A):
+            if A[index + swapSize] % 2 == 1:
+                swapSize += 1
+            else:
+                temp = A[index + swapSize]
+                A[index + swapSize] = A[index]
+                A[index] = temp
+                index += 1
+        
+        return A
+```
