@@ -1,4 +1,5 @@
 # Find All Numbers Disappeared in an Array  
+## Rating: [3/5] Important trick of using the values themselves to mark certain indexes as used.
 
 [Question Link](https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/)  
 
@@ -11,10 +12,7 @@ Could you do it without extra space and in O(n) runtime? You may assume the retu
 ##### Constraints:
 
 ### Explanation:
-TLDR: 
-
-### Notes:
-
+TLDR: Use the value at each index to mark the index indicated by the value as seen. The index of the remaining elements that are not negative should be appended to your answer.
 
 ## Solution:
 ```Python
