@@ -16,14 +16,8 @@ Reorder the logs so that all of the letter-logs come before any digit-log.  The 
 
 Return the final order of the logs.  
 
-
-##### Constraints:
-
 ### Explanation:
 TLDR: 
-
-### Notes:
-
 
 ## Solution:
 ```Python
