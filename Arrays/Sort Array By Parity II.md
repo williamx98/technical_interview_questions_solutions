@@ -7,13 +7,8 @@ Sort the array so that whenever A[i] is odd, i is odd; and whenever A[i] is even
 
 You may return any answer array that satisfies this condition.  
 
-##### Constraints:
-
 ### Explanation:
 TLDR: Swap when the pointers point to indexes when I doesn't meet its criteria. Move pointers when they are in the right place.
-
-### Notes:
-
 
 ## Solution:
 ```Python
