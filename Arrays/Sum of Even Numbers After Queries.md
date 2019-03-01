@@ -10,13 +10,8 @@ For the i-th query val = queries[i][0], index = queries[i][1], we add val to A[i
 
 Return the answer to all queries.  Your answer array should have answer[i] as the answer to the i-th query.  
 
-##### Constraints:
-
 ### Explanation:
-TLDR: Calculate the total of even numbers before any queries. Update the toal of even numbers on every query based on how that query modified that index.
-
-### Notes:
-No need to recalculate the total of evens on every query by interating through the entire array.  
+TLDR: Calculate the total of even numbers before any queries. Update the toal of even numbers on every query based on how that query modified that index. 
 
 Don't forget to set the new value on every query.  
 
