@@ -6,16 +6,10 @@ In a array A of size 2N, there are N+1 unique elements, and exactly one of these
 
 Return the element repeated N times.
 
-##### Constraints:
-
 ### Explanation:
 TLDR: Only one duplicated element  
 
 There is only one duplicated element so keep track of the seen elements in a set for speedy checking
-
-### Notes:
-Just a variation of find the one duplicated element
-
 
 ## Solution:
 ```Python
