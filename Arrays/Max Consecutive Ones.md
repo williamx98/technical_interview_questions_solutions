@@ -7,10 +7,7 @@ Given a binary array, find the maximum number of consecutive 1s in this array.
 ##### Constraints:
 
 ### Explanation:
-TLDR: 
-
-### Notes:
-
+TLDR: add 1 when 1, set 0 when 0. Key step: set answer on every iteration - [0,1,1] - for when consecutive ones dont terminate with 0
 
 ## Solution:
 ```Python
