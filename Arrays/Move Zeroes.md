@@ -4,13 +4,8 @@
 
 Given an array nums, write a function to move all 0's to the end of it while maintaining the relative order of the non-zero elements.  
 
-##### Constraints:
-
 ### Explanation:
-TLDR: 
-
-### Notes:
-
+TLDR: Swap zeros with non-zeros until they are grouped together and will "shift" down to the end
 
 ## Solution:
 ```Python
