@@ -14,13 +14,8 @@ Here, we are viewing the "shadow" when looking at the cubes from the top, the fr
 
 Return the total area of all three projections.  
 
-##### Constraints:
-
 ### Explanation:
 TLDR: analyze the matrix on single-item, row, then column basis.
-
-### Notes:
-
 
 ## Solution:
 ```Python
