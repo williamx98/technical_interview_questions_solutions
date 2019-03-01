@@ -8,12 +8,8 @@ Do not allocate extra space for another array, you must do this by modifying the
 
 You may assume all the characters consist of printable ascii characters.  
 
-##### Constraints:
-
 ### Explanation:
 TLDR: 
-
-### Notes:
 
 ## Solution:
 ```Python
@@ -37,7 +33,7 @@ class Solution(object):
         left = 0
         right = len(s) - 1
         
-        while left <= right:
+        while left < right:
             temp = s[left]
             s[left] = s[right]
             s[right] = temp
