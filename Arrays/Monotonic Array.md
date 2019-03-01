@@ -8,13 +8,8 @@ An array A is monotone increasing if for all i <= j, A[i] <= A[j].  An array A i
 
 Return true if and only if the given array A is monotonic.  
 
-##### Constraints:
-
 ### Explanation:
 TLDR: Assume that the array is both always increasing and always decreasing. Only one will can be true upon checking. 
-
-### Notes:
-
 
 ## Solution:
 ```Python
