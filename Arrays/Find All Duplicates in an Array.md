@@ -8,13 +8,8 @@ Find all the elements that appear twice in this array.
 
 Could you do it without extra space and in O(n) runtime?  
 
-##### Constraints:
-
 ### Explanation:
-TLDR: 
-
-### Notes:
-
+TLDR: The trick to this question is that all the values in the array are of 1 ≤ a[i] ≤ n (n = size of array). This allows you to use each value to change array's index (of that value) to mark it as seen.
 
 ## Solution:
 ```Python
