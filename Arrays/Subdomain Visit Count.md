@@ -8,13 +8,8 @@ Now, call a "count-paired domain" to be a count (representing the number of visi
 
 We are given a list cpdomains of count-paired domains. We would like a list of count-paired domains, (in the same format as the input, and in any order), that explicitly counts the number of visits to each subdomain.  
 
-##### Constraints:
-
 ### Explanation:
 TLDR: 
-
-### Notes:
-
 
 ## Solution:
 ```Python
