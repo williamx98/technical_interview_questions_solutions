@@ -4,17 +4,12 @@
 
 Given a matrix of m x n elements (m rows, n columns), return all elements of the matrix in spiral order.  
 
-##### Constraints:
-
 ### Explanation:
 TLDR: Bounce the "pointer" around as you travel the array
 
 Stop traversing once the number of elements traversed == number of elements in the array.  
 
 This solution was inspired by the game Snake, where a snake will travel indefinitely in the direction you choose with only one button press i.e press the left button once, the snake will go left forever. This solution emulates that same logic. The "head" of the snake will traverse in the given direction until it has to move in the next direction.
-
-### Notes:
-
 
 ## Solution:
 ```Python
