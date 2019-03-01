@@ -6,13 +6,8 @@ Given an array A, we can perform a pancake flip: We choose some positive integer
 
 Return the k-values corresponding to a sequence of pancake flips that sort A.  Any valid answer that sorts the array within 10 * A.length flips will be judged as correct.  
 
-##### Constraints:
-
 ### Explanation:
 TLDR: Find the max, flip the values up to and including max, then flip the max to its position by flipping k = max value. then repeat with max - 1.
-
-### Notes:
-
 
 ## Solution:
 ```Python
