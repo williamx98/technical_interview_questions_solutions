@@ -14,14 +14,9 @@ If there are still unrevealed cards, go back to step 1.  Otherwise, stop.
 Return an ordering of the deck that would reveal the cards in increasing order.  
   
 The first entry in the answer is considered to be the top of the deck.  
-  
-##### Constraints:
 
 ### Explanation:
-TLDR: 
-
-### Notes:
-
+TLDR: use an inorder array to be shuffled into that order. simulate the alogrithm by performing each op on the inorder array which will now be altered in the form of the array. 
 
 ## Solution:
 ```Python
