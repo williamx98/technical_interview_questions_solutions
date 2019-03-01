@@ -4,13 +4,8 @@
 
 Given an array of integers A sorted in non-decreasing order, return an array of the squares of each number, also in sorted non-decreasing order.
 
-##### Constraints:
-
 ### Explanation:
 TLDR: Compare a moving front pointer to a moving back pointer and add the greater to the end of the answer array and move that pointer torwards the center.
-
-### Notes:
-
 
 ## Solution:
 ```Python
