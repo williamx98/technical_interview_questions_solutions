@@ -6,13 +6,8 @@ You're given strings J representing the types of stones that are jewels, and S r
 
 The letters in J are guaranteed distinct, and all characters in J and S are letters. Letters are case sensitive, so "a" is considered a different type of stone from "A".  
 
-##### Constraints:
-
 ### Explanation:
 TLDR: make a set with the jewels that are given. Check each stones existence in the jewels set.
-
-### Notes:
-
 
 ## Solution:
 ```Python
