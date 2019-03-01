@@ -1,4 +1,5 @@
 # Fair Candy Swap  
+### Rating: [4/5] Convoluted setup but the solution helps train your mind to see arrays differently.
 
 [Question Link](https://leetcode.com/problems/fair-candy-swap/)  
 
@@ -10,12 +11,8 @@ Return an integer array ans where ans[0] is the size of the candy bar that Alice
 
 If there are multiple answers, you may return any one of them.  It is guaranteed an answer exists.  
 
-##### Constraints:
-
 ### Explanation:
-TLDR: 
-
-### Notes:
+TLDR: The target sum for each person is going to the average of (sum(Alice) + sum(B)) / 2. It should be clear as to why. Store the Bob's elements in a set. Iterate through the set and identify if a possible swap can occur by first "taking out" (subtracting) the current item in evaluation from the origin sum(Alice) - this will give you a target value, a value that if added to the temp sum(Alice) would equal the target sum. This target value should be looked for in the set(Bob). 
 
 
 ## Solution:
