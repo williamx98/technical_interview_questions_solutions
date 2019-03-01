@@ -10,13 +10,8 @@ We are given the root of a binary tree with unique values, and the values x and 
 
 Return true if and only if the nodes corresponding to the values x and y are cousins.  
 
-##### Constraints:
-
 ### Explanation:
 TLDR: 
-
-### Notes:
-
 
 ## Solution:
 ```Python
