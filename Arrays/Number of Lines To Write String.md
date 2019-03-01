@@ -6,13 +6,8 @@ We are to write the letters of a given string S, from left to right into lines. 
 
 Now answer two questions: how many lines have at least one character from S, and what is the width used by the last such line? Return your answer as an integer list of length 2.  
 
-##### Constraints:
-
 ### Explanation:
 TLDR: Simulate "writing" each character and keep track of the length of the last line
-
-### Notes:
-
 
 ## Solution:
 ```Python
