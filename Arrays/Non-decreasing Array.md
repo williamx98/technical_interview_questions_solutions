@@ -6,8 +6,6 @@ Given an array with n integers, your task is to check if it could become non-dec
 
 We define an array is non-decreasing if array[i] <= array[i + 1] holds for every i (1 <= i < n).  
 
-##### Constraints:
-
 ### Explanation:
 TLDR: Reduce the problem to a smaller size. If there are two locations where A[i] is greater than A[i + 1], then its not possible. 
 
