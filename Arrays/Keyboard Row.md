@@ -4,13 +4,8 @@
 
 Given a List of words, return the words that can be typed using letters of alphabet on only one row's of American keyboard like the image below.  
 
-##### Constraints:
-
 ### Explanation:
 TLDR: Break the rows into sets. Break each word into a set. Check each char in a word to be a subset of every row set. Initialize found to true on each row check and set false when char in word is not in row.
-
-### Notes:
-
 
 ## Solution:
 ```Python
