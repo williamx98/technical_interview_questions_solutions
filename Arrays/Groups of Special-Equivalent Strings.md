@@ -17,7 +17,7 @@ Return the number of groups of special-equivalent strings from A.
 ##### Constraints:
 
 ### Explanation:
-TLDR: isolate the even and odd indices. Then sort each sub group of the word. combine them into one big identity. Add them to set.
+TLDR: For every single word in the list, isolate the even letters then the odd letters. Sort both lists alone then combine them into a single key separated by a space. Store the keys into the answer set.
 
 ### Notes:
 
