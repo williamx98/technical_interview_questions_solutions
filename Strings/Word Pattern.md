@@ -9,7 +9,7 @@ Here follow means a full match, such that there is a bijection between a letter 
 ##### Constraints:
 
 ### Explanation:
-TLDR: 
+TLDR: On a high level, you are looking for a 1:1 mapping between the letters and the words. Rather than make two dictionaries, make one a dcitionary and keep a set of the values. If the letter is already in the dictionary, check if the word mataches. If the letter is not in the dictionary, check if its in the values set.
 
 ### Notes:
 
