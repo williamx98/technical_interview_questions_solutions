@@ -42,6 +42,7 @@ class Solution(object):
         indexes = []
         
         for index in xrange(len(A)):
+            # if there are more than 2 characters different, its impossible so return false
             if len(indexes) > 2:
                 return False
             
