@@ -8,13 +8,8 @@ The rook moves as in the rules of Chess: it chooses one of four cardinal directi
 
 Return the number of pawns the rook can capture in one move.  
 
-##### Constraints:
-
 ### Explanation:
-TLDR: 
-
-### Notes:
-
+TLDR: This is just basic matrix and array traversal. Find the rook, travel in the possible directions (up, down, left and right) until a piece is reached or the edge of the board is reached. 
 
 ## Solution:
 ```Python
