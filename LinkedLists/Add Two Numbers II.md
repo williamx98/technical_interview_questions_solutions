@@ -49,13 +49,8 @@ TLDR:  Similar to the idea above but instead of using a stack, simply just rever
 
 ## Solution:
 ```Python
-class Solution(object):
+class Solution:
     def addTwoNumbers(self, l1, l2):
-        """
-        :type l1: ListNode
-        :type l2: ListNode
-        :rtype: ListNode
-        """
         def reverse(head):
             if head is None or head.next is None:
                 return head
@@ -70,30 +65,26 @@ class Solution(object):
             
             return newHead
         
-        
         l1 = reverse(l1)
         l2 = reverse(l2)
-
-        carry = 0
-        root = ListNode(0)
-        n = root
         
-        while l1 or l2 or carry:
-            v1 = 0
-            v2 = 0
+        currentHead = None
+        rem = 0
+        while l1 or l2 or rem:
+            total = rem
+            
             if l1:
-                v1 = l1.val
+                total += l1.val
                 l1 = l1.next
+                
             if l2:
-                v2 = l2.val
+                total += l2.val
                 l2 = l2.next
             
-            total = v1+v2+carry
-            carry = total // 10
-            val = total % 10
+            rem = total // 10
+            toAdd = ListNode(total % 10)
+            toAdd.next = currentHead
+            currentHead = toAdd
             
-            n.next = ListNode(val)
-            n = n.next
-        
-        return reverse(root.next)
+        return currentHead
 ```
