@@ -6,13 +6,8 @@ You are given two non-empty linked lists representing two non-negative integers.
 
 You may assume the two numbers do not contain any leading zero, except the number 0 itself.  
 
-##### Constraints:
-
 ### Explanation:
-TLDR: 
-
-### Notes:
-
+TLDR: Store the nodes in reverse via a stack. Build out the answer list by popping off nodes from the stack. This is a simple solution but a more optimized solution can be found below.
 
 ## Solution:
 ```Python
@@ -48,6 +43,9 @@ class Solution:
             
         return currentHead
 ```
+
+### Explanation:
+TLDR:  Similar to the idea above but instead of using a stack, simply just reverse two list. Traverse the modified lists going forward (which is really going backwards on the original lists). Once you are done, reverse the answer list.
 
 ## Solution:
 ```Python
