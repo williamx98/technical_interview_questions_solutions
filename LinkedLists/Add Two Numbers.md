@@ -6,13 +6,8 @@ You are given two non-empty linked lists representing two non-negative integers.
 
 You may assume the two numbers do not contain any leading zero, except the number 0 itself.  
 
-##### Constraints:
-
 ### Explanation:
 TLDR: 
-
-### Notes:
-
 
 ## Solution:
 ```Python
@@ -23,16 +18,14 @@ class Solution(object):
         n = root
         
         while l1 or l2 or carry:
-            v1 = 0
-            v2 = 0
+            total = carry
             if l1:
-                v1 = l1.val
+                total += l1.val
                 l1 = l1.next
             if l2:
-                v2 = l2.val
+                total += l2.val
                 l2 = l2.next
             
-            total = v1+v2+carry
             carry = total // 10
             val = total % 10
             
