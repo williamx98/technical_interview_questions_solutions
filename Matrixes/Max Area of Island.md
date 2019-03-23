@@ -6,13 +6,8 @@ Given a non-empty 2D array grid of 0's and 1's, an island is a group of 1's (rep
 
 Find the maximum area of an island in the given 2D array. (If there is no island, the maximum area is 0.)  
 
-##### Constraints:
-
 ### Explanation:
-TLDR: 
-
-### Notes:
-
+TLDR: This is one of the most basic implementations of DFS (depth first search). Once you have searched a particular coordinate, mark it as visited by changing the array value to 0 since 1 indicates a block of land. Once an island has been found, all of it's land coordinates will now be set to 0 so on the next iteration of the DFS, extra work isn't being done is identify the previously visited island as 'already seen'. Its a lot more intuitive with pictures. 
 
 ## Solution:
 ```Python
