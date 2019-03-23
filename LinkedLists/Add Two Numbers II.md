@@ -7,45 +7,7 @@ You are given two non-empty linked lists representing two non-negative integers.
 You may assume the two numbers do not contain any leading zero, except the number 0 itself.  
 
 ### Explanation:
-TLDR: Store the nodes in reverse via a stack. Build out the answer list by popping off nodes from the stack. This is a simple solution but a more optimized solution can be found below.
-
-## Solution:
-```Python
-class Solution:
-    def addTwoNumbers(self, l1, l2):
-        stack1 = []
-        stack2 = []
-        p1 = l1
-        p2 = l2
-        
-        while p1:
-            stack1.append(p1.val)
-            p1 = p1.next
-            
-        while p2:
-            stack2.append(p2.val)
-            p2 = p2.next
-            
-        currentHead = None
-        rem = 0
-        while stack1 or stack2 or rem:
-            s = rem
-            if stack1:
-                s += stack1.pop()
-                
-            if stack2:
-                s += stack2.pop()
-            
-            rem = s // 10
-            toAdd = ListNode(s % 10)
-            toAdd.next = currentHead
-            currentHead = toAdd
-            
-        return currentHead
-```
-
-### Explanation:
-TLDR:  Similar to the idea above but instead of using a stack, simply just reverse two list. Traverse the modified lists going forward (which is really going backwards on the original lists). Once you are done, reverse the answer list.
+TLDR:  Reverse the two lists. Then assemble the answer list by moving down the two reversed lists at the same time.
 
 ## Solution:
 ```Python
