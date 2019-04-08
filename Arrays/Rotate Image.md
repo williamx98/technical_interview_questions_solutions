@@ -9,10 +9,21 @@ Rotate the image by 90 degrees (clockwise).
 ##### Constraints:
 
 ### Explanation:
-TLDR: 
+TLDR: This is a basic row-col swap. The matrix is N X N so its a straight row to column swap. 
 
 ### Notes:
+```base matrix```
+[1,2]
+[3,4]
 
+```step 1: swap rows and cols```
+[1,3]
+[2,4]
+
+
+```step2: reverse each row```
+[3,1]
+[4,2]
 
 ## Solution:
 ```Python
