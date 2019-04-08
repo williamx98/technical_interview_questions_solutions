@@ -4,13 +4,8 @@
 
 Shuffle a set of numbers without duplicates.  
 
-##### Constraints:
-
 ### Explanation:
-TLDR: 
-
-### Notes:
-
+TLDR: for every item, pick a random index in the array and swap with that index
 
 ## Solution:
 ```Python
