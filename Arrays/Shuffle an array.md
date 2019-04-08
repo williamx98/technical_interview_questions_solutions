@@ -32,7 +32,10 @@ class Solution(object):
         """
         copy = list(copy)
         for i in range(len(copy)):
+            # pick a random index
             swap = random.randrange(i, len(copy))
+            
+            # swap current index with the random index
             temp = copy[swap]
             copy[swap] = copy[i]
             copy[i] = temp
