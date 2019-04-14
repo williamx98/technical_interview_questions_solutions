@@ -14,13 +14,8 @@ Now, given a list of words, each word can be written as a concatenation of the M
 
 Return the number of different transformations among all words we have.  
 
-##### Constraints:
-
 ### Explanation:
-
-### Notes:
-
-
+TL;DR: Use a set to keep a single copy of all generated morse-words
 ## Solution:
 ```Python
 class Solution(object):
