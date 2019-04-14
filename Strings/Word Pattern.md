@@ -9,12 +9,14 @@ Here follow means a full match, such that there is a bijection between a letter 
 ### Explanation:
 TLDR: On a high level, you are looking for a 1:1 mapping between the letters and the words. Rather than make two dictionaries, make one dictionary and then a set of the values. If the letter is already in the dictionary, check if the word matches. If the letter is not in the dictionary, check if its in the values set.
 
+```True```
 ```pattern = "abba", str = "dog cat cat dog"```
-```dict = {a = dog, b = cat}    set = (dog, cat)
+```dict = {a = dog, b = cat}    set = (dog, cat)```
 
+```False```
 ```pattern = "abba", str = "dog cat cat fish"```
-```dict = {a = dog, b = cat}    set = (dog, cat)
-```false because 'a' in dict but 'fish' != 'dog'
+```dict = {a = dog, b = cat}    set = (dog, cat)```
+```false because 'a' in dict but 'fish' != 'dog'```
 
 ## Solution:
 ```Python
