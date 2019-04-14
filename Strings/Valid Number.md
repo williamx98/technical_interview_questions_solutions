@@ -4,15 +4,17 @@
 
 Validate if a given string can be interpreted as a decimal number.  
 
-##### Constraints:
-
 ### Explanation:
-TLDR: On every character, only a certain subset of characters are allowed to occur next. This uses a method called DFA, deterministic finite automaton.
+TLDR: On every character, only a certain subset of characters are allowed to occur next. The next subset of characters are determined based on the current character's type. This uses a method called DFA, deterministic finite automaton.
 
 The underlying algorithm for RegExp uses DFA.
 
-### Notes:
+While the only character seen is a space, then only a space, a sign, a digit or a decimal point can follow.  
+Following a sign, only a digit or decimal point can follow.  
+Following a digit, only another digit, e, or a blank.  
 
+The first consecutive blanks will be 'ignored' by not changing the initial state. i.e 10 spaces or 1 space won't change the initial state.  
+The following spaces after a non-space character is seen will be regarded as the 'last' state i.e any other non-space characters following the current space will invalidate the number.  
 
 ## Solution:
 ```Python
