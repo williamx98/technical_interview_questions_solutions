@@ -6,13 +6,15 @@ Given a pattern and a string str, find if str follows the same pattern.
 
 Here follow means a full match, such that there is a bijection between a letter in pattern and a non-empty word in str.  
 
-##### Constraints:
-
 ### Explanation:
-TLDR: On a high level, you are looking for a 1:1 mapping between the letters and the words. Rather than make two dictionaries, make one a dcitionary and keep a set of the values. If the letter is already in the dictionary, check if the word mataches. If the letter is not in the dictionary, check if its in the values set.
+TLDR: On a high level, you are looking for a 1:1 mapping between the letters and the words. Rather than make two dictionaries, make one dictionary and then a set of the values. If the letter is already in the dictionary, check if the word matches. If the letter is not in the dictionary, check if its in the values set.
 
-### Notes:
+```pattern = "abba", str = "dog cat cat dog"```
+```dict = {a = dog, b = cat}    set = (dog, cat)
 
+```pattern = "abba", str = "dog cat cat fish"```
+```dict = {a = dog, b = cat}    set = (dog, cat)
+```false because 'a' in dict but 'fish' != 'dog'
 
 ## Solution:
 ```Python
