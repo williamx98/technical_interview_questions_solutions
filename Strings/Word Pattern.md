@@ -16,7 +16,7 @@ TLDR: On a high level, you are looking for a 1:1 mapping between the letters and
 ```False```  
 ```pattern = "abba", str = "dog cat cat fish"```  
 ```dict = {a = dog, b = cat}    set = (dog, cat)```  
-```false because 'a' in dict but 'fish' != 'dog'```  
+```False because 'a' in dict but 'fish' != 'dog'```  
 
 ## Solution:
 ```Python
