@@ -14,7 +14,7 @@ If no valid conversion could be performed, a zero value is returned.
 
 
 ### Explanation:
-TLDR: 
+TLDR: Use DFA to determine validity of current substring.
 
 ## Solution:
 ```Python
