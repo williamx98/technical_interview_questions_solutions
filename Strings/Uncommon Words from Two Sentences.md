@@ -10,13 +10,10 @@ Return a list of all uncommon words.
 
 You may return the list in any order.  
 
-##### Constraints:
-
 ### Explanation:
 TLDR: an uncommon word only appears in one of the sentences, combine them together and count each word occurence.
 
-### Notes:
-
+The trick to note is that uncommon words will only appear once when looking at both sentences at the same time.
 
 ## Solution:
 ```Python
