@@ -16,6 +16,44 @@ If no valid conversion could be performed, a zero value is returned.
 ### Explanation:
 TLDR: 
 
+## Solution:
+```Python
+class Solution(object):
+    def myAtoi(self, str):
+        arr = list(str)
+        state = [{},
+                {' ': 1, '+': 2, '-': 2, 'digit': 2},
+                {'digit': 2}]
+            
+        currState = 1
+        answer = 0
+        sign = 1
+        index = 0
+        while index < len(str):
+            char = arr[index]
+            
+            if char >= '0' and char <= '9':
+                answer = answer * 10
+                answer += ord(char) - ord('0')
+                char = 'digit'
+                
+            if currState == 1 and char == '-':
+                sign = -1
+            
+            if char not in state[currState].keys():
+                break
+
+            if sign * answer < -2147483648:
+                return -2147483648
+                
+            if sign * answer > 2147483647:
+                return 2147483647
+                
+            currState = state[currState][char]
+            index = index + 1
+                
+        return sign * answer
+```
 
 ## Solution:
 ```Java
@@ -62,43 +100,4 @@ class Solution {
         return sign * answer;
     }
 }
-```
-
-## Solution:
-```Python
-class Solution(object):
-    def myAtoi(self, str):
-        arr = list(str)
-        state = [{},
-                {' ': 1, '+': 2, '-': 2, 'digit': 2},
-                {'digit': 2}]
-            
-        currState = 1
-        answer = 0
-        sign = 1
-        index = 0
-        while index < len(str):
-            char = arr[index]
-            
-            if char >= '0' and char <= '9':
-                answer = answer * 10
-                answer += ord(char) - ord('0')
-                char = 'digit'
-                
-            if currState == 1 and char == '-':
-                sign = -1
-            
-            if char not in state[currState].keys():
-                break
-
-            if sign * answer < -2147483648:
-                return -2147483648
-                
-            if sign * answer > 2147483647:
-                return 2147483647
-                
-            currState = state[currState][char]
-            index = index + 1
-                
-        return sign * answer
 ```
