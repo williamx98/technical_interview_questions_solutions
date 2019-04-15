@@ -15,14 +15,8 @@ If you add a plus ('+') in the local name, everything after the first plus sign 
 It is possible to use both of these rules at the same time.  
 
 Given a list of emails, we send one email to each address in the list.  How many different addresses actually receive mails?  
-
-##### Constraints:
-
 ### Explanation:
-TLDR: 
-
-### Notes:
-
+TLDR: Use a set to eliminate duplicated copies of and keep a single copy of all emails. Return the length of the set
 
 ## Solution:
 ```Python
