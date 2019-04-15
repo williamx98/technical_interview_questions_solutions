@@ -4,13 +4,8 @@
 
 Implement function ToLowerCase() that has a string parameter str, and returns the same string in lowercase.
 
-##### Constraints:
-
 ### Explanation:
 TLDR: Use ASCII table values to convert between cases.
-
-### Notes:
-
 
 ## Solution:
 ```Python
