@@ -14,7 +14,7 @@ For 20 years there was a bug in most binary search, merge sort, or any kind of f
 The problem with the code is that there is potential for overflow. If ```low``` were ```INT_MAX - 2``` and ```high``` were ```INT_MAX```, mathematically the mid-point would be ```INT_MAX - 1```. However, the order of operations forces the addtion of ```low``` and ```high``` first so ```low + high``` would be ```(2 * INT_MAX) - 2```. ```(2 * INT_MAX)``` would cause an integer overflow error and break the flow of the algorithm.  
   
 To fix this, the code is:  
-```mid = low (high - low)/2```  
+```mid = low + (high - low)/2```  
 This will offset the low value by half the difference between the high and low value. In short, this psuedo-reverses the order of operations of the original code, preventing and integer overflow.  
 
 
