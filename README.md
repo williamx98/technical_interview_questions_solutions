@@ -24,5 +24,5 @@ If you find a bug, want to say thank you, or give me a job, my contact details a
 
 [Website: willx.org](https://willx.org)  
 [LinkedIn: willx.org/linkedin](https://willx.org/linkedin)  
-[GitHub: willx.org/github](https://willx.org/github)  
+[GitHub: willx.org/github (but wait, you are already here...)](https://willx.org/github)  
 [Resume: willx.org/resume](https://willx.org/resume)  
