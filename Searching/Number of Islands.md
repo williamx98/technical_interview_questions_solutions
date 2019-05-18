@@ -1,15 +1,11 @@
-# https://leetcode.com/explore/featured/card/queue-stack/231/practical-application-queue/1374
+# Number of Islands
 
 [Question Link](https://leetcode.com/explore/featured/card/queue-stack/231/practical-application-queue/1374)  
 
 Given a 2d grid map of '1's (land) and '0's (water), count the number of islands. An island is surrounded by water and is formed by connecting adjacent lands horizontally or vertically. You may assume all four edges of the grid are all surrounded by water.
 
-##### Constraints:
-
 ### Explanation:
 TLDR: A destructive DFS. Destruction can be resovled by making a copy before destroying
-
-### Notes:
 
 ## Solution DFS:
 ```Python

@@ -8,12 +8,8 @@ Grid cells are connected horizontally/vertically (not diagonally). The grid is c
 
 The island doesn't have "lakes" (water inside that isn't connected to the water around the island). One cell is a square with side length 1. The grid is rectangular, width and height don't exceed 100. Determine the perimeter of the island.  
 
-##### Constraints:
-
 ### Explanation:
-TLDR: 
-
-### Notes:
+TLDR: On every array value of 1, add four to the total perimeter. Then, inspect the surrounding 4 locations, up, down, left and right, and subtract 1 if those values are 1. 
 
 
 ## Solution:
