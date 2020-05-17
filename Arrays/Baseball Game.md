@@ -31,8 +31,6 @@ You need to return the sum of the points you could get in all the rounds.
 ### Explanation:
 TLDR: Basic conditional handling. 
 
-```
-
 ## Solution:
 ```Python
 class Solution(object):
