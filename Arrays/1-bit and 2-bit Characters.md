@@ -1,6 +1,6 @@
 # 1-bit and 2-bit Characters  
 
-### Rating: [0/5] Convoluted question. Not useful to study in my opinion 
+### Rating: [1/5] Convoluted question. Hard to come up with the solution but the solution is easy.
 
 [Question Link](https://leetcode.com/problems/1-bit-and-2-bit-characters/)  
 
