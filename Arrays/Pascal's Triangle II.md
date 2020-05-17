@@ -1,18 +1,14 @@
 # Pascal's Triangle II  
 
+### Rating: [4/5] Good Question. Not impossible but hard to find optimal solution.
+
 [Question Link](https://leetcode.com/problems/pascals-triangle-ii/)  
 
 Given a non-negative index k where k ≤ 33, return the kth index row of the Pascal's triangle.  
 
 Note that the row index starts from 0.  
 
-##### Constraints:
-
 ### Explanation:
-TLDR: 
-
-### Notes:
-
 
 ## Solution:
 ```Python
@@ -22,17 +18,21 @@ class Solution(object):
         :type rowIndex: int
         :rtype: List[int]
         """
-        answer = [0] * (rowIndex + 1)
+
+        # base case
         if rowIndex == 0:
             return [1]
+
+        # make an empty answer array. 
+        answerArray = [0] * (rowIndex + 1)
+        # make the first element 1
+        answerArray[0] = 1
         
-        for row in xrange(1, rowIndex + 2):
-            prev = 1
-            for index in xrange(1, row - 1):
-                total = answer[index] + prev
-                prev = answer[index]
-                answer[index] = total
-            answer[row - 1] = 1
-            
-        return answer
+        # run throught each row
+        for currentRow in xrange(1, rowIndex + 1):
+            # going backwards, calculate the value for each index
+            for index in xrange(currentRow, 0, -1):
+                answerArray[index] += answerArray[index - 1]
+
+        return answerArray
 ```

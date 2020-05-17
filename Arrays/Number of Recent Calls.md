@@ -1,5 +1,7 @@
 # Number of Recent Calls
 
+### Rating: [0/5] Terrible question. Very hard to figure out what is going on. Not worth doing.
+
 [Question Link](https://leetcode.com/problems/number-of-recent-calls/)  
 Write a class RecentCounter to count recent requests.  
 

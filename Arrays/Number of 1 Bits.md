@@ -1,5 +1,7 @@
 # Number of 1 Bits  
 
+### Rating: [5/5] Good question. Good intro to binary operations.
+
 [Question Link](https://leetcode.com/problems/number-of-1-bits/)  
 
 Write a function that takes an unsigned integer and return the number of '1' bits it has (also known as the Hamming weight).  

@@ -1,5 +1,7 @@
 # Largest Perimeter Triangle  
 
+## Rating: [5/5] Good question. Somewhat complicated solution.
+
 [Question Link](https://leetcode.com/problems/largest-perimeter-triangle/)  
 
 Given an array A of positive lengths, return the largest perimeter of a triangle with non-zero area, formed from 3 of these lengths.  

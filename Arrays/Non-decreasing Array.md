@@ -1,5 +1,7 @@
 # Non-decreasing Array  
 
+### Rating: [4/5] Good question. Somewhat complicated answer, hard to infer.
+
 [Question Link](https://leetcode.com/problems/non-decreasing-array/)  
 
 Given an array with n integers, your task is to check if it could become non-decreasing by modifying at most 1 element.  
@@ -16,12 +18,16 @@ The brute force solution is to change A[i] to A[i + 1] if A[i] > A[i]. Then chec
 ```Python
 class Solution(object):
     def checkPossibility(self, A):
-        p = None
-        for i in xrange(len(A) - 1):
-            if A[i] > A[i+1]:
-                if p is not None:
+        indexOfDecrease = None
+        for currentIndex in xrange(len(A) - 1):
+            if A[currentIndex] > A[currentIndex+1]:
+                if indexOfDecrease is not None:
                     return False
-                p = i
+                indexOfDecrease = currentIndex
 
-        return (p is None or p == 0 or p == len(A)-2 or A[p-1] <= A[p+1] or A[p] <= A[p+2])
+        return (indexOfDecrease is None or # no decreases
+        		indexOfDecrease == 0 or # decrease between 0 - 1, make 0 lower than 1
+        		indexOfDecrease == len(A)-2 or # decrease happens before the last element. Make the last element larger than the previous element.
+        		A[indexOfDecrease - 1] <= A[indexOfDecrease + 1] or # in [...a, b, c], decrease happens between b and c. When a <= c, make b = c.
+        		A[indexOfDecrease] <= A[indexOfDecrease + 2]) # in [... a, b, c], decrease happens between a and b. When a <= c, make b = c
 ```

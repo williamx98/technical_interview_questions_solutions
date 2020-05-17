@@ -1,5 +1,7 @@
 # Next Greater Element I  
 
+### Rating: [0/5] Terrible question. Would not recommend attempting to answer this. You will learn nothing.
+
 [Question Link](https://leetcode.com/problems/next-greater-element-i/)  
 
 You are given two arrays (without duplicates) nums1 and nums2 where nums1’s elements are subset of nums2. Find all the next greater numbers for nums1's elements in the corresponding places of nums2.  

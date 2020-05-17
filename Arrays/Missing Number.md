@@ -1,16 +1,13 @@
 # Missing Number  
 
+### Rating: [5/5] Good intro into array traversal. Super straight forward and a good first step into number theory.
+
 [Question Link](https://leetcode.com/problems/missing-number/)  
 
 Given an array containing n distinct numbers taken from 0, 1, 2, ..., n, find the one that is missing from the array.  
 
-##### Constraints:
-
 ### Explanation:
-TLDR: 
-
-### Notes:
-
+TLDR: Expected sum can be calcualted via summation formula. Missing number is the difference between the expected sum and the actual sum of the array.
 
 ## Solution:
 ```Python

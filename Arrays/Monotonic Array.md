@@ -1,5 +1,7 @@
 # Monotonic Array  
 
+### Rating: [5/5] Good intro into array traversal. Super straight forward solution.
+
 [Question Link](https://leetcode.com/problems/monotonic-array/)  
 
 An array is monotonic if it is either monotone increasing or monotone decreasing.  

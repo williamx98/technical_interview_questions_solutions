@@ -1,15 +1,15 @@
 # Maximum Subarray  
 
+### Rating: [5/5] Good intro into array traversal. Super straight forward and a good first step into number theory.
+
 [Question Link](https://leetcode.com/problems/maximum-subarray/)  
 
 Given an integer array nums, find the contiguous subarray (containing at least one number) which has the largest sum and return its sum.  
 
-##### Constraints:
-
 ### Explanation:
-TLDR: Add the previous element if its greater than zero. repeat and look for a max after completion
+TLDR: Add the previous element if its greater than zero. repeat and look for a max after completion.
 
-### Notes:
+Basically, don't ever add a negative number if you want the total to keep increasing. Thus, when you encounter a negative number, reset the counter to 0 after seeing if the counter is a possible answer.
 
 ## Solution:
 ```Python
@@ -35,6 +35,7 @@ class Solution(object):
         return answer
 ```
 
+### Keep track of the length of the total
 ## Solution:
 ```Python
 class Solution(object):
@@ -63,23 +64,4 @@ class Solution(object):
                 tempStart = index + 1
                 
         return answer
-```
-
-## Solution:
-```Python
-class Solution(object):
-    def maxSubArray(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: int
-        """
-        max = nums[0]
-        for index in xrange(1, len(nums)):
-            if nums[index - 1] > 0:
-                nums[index] += nums[index - 1]
-                
-            if nums[index] > max:
-                max = nums[index]
-        
-        return max
 ```
