@@ -1,5 +1,7 @@
 # Best Time to Buy and Sell Stock II  
 
+### Rating: [3/5] Good intro into arrays. Somewhat convoluted. Straight forward solution.
+
 [Question Link](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/)  
 
 Say you have an array for which the ith element is the price of a given stock on day i.  
@@ -8,13 +10,8 @@ Design an algorithm to find the maximum profit. You may complete as many transac
 
 Note: You may not engage in multiple transactions at the same time (i.e., you must sell the stock before you buy again).  
 
-##### Constraints:
-
 ### Explanation:
 TLDR: Add to profit whenever there is a positive growth in price.
-
-### Notes:
-
 
 ## Solution:
 ```Python
