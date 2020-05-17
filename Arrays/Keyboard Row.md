@@ -1,5 +1,7 @@
 # Keyboard Row  
 
+## Rating: [5/5] Good question. Lengthy but straight forward solution
+
 [Question Link](https://leetcode.com/problems/keyboard-row/)  
 
 Given a List of words, return the words that can be typed using letters of alphabet on only one row's of American keyboard like the image below.  
