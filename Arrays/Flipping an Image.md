@@ -1,5 +1,5 @@
 # Flipping an Image
-### Rating [3/5] Main concept is notice the pattern. 
+### Rating [2/5] Main trick is to notice the pattern. 
 
 [Question Link](https://leetcode.com/problems/flipping-an-image/)  
 

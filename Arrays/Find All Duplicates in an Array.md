@@ -1,5 +1,5 @@
 # Find All Duplicates in an Array  
-
+## Rating: [3/5] Convoluted trick of using the values themselves to mark certain indexes as used.
 [Question Link](https://leetcode.com/problems/find-all-duplicates-in-an-array/)  
 
 Given an array of integers, 1 ≤ a[i] ≤ n (n = size of array), some elements appear twice and others appear once.  

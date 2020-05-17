@@ -1,5 +1,7 @@
 # Groups of Special-Equivalent Strings  
 
+## Rating: [1/5] Convoluted question. Convoluted solution.
+
 [Question Link](https://leetcode.com/problems/groups-of-special-equivalent-strings/)  
 
 You are given an array A of strings.  

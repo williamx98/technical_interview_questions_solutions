@@ -1,4 +1,5 @@
 # Find Common Characters  
+## Rating: [5/5] Straight forward question. Straight foward solution. Good practice for hashmaps/dictionaries
 
 [Question Link](https://leetcode.com/problems/find-common-characters/)  
 

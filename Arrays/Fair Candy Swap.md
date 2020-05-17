@@ -1,5 +1,5 @@
 # Fair Candy Swap  
-### Rating: [4/5] Convoluted setup but the solution helps train your mind to see arrays differently.
+### Rating: [3/5] Convoluted setup but the solution helps train your mind to see arrays differently.
 
 [Question Link](https://leetcode.com/problems/fair-candy-swap/)  
 
@@ -24,26 +24,28 @@ class Solution(object):
         :type B: List[int]
         :rtype: List[int]
         """
-        sumA = 0
-        sumB = 0
-        setB = set()
+        alicesGivenTotal = 0
+        setOfAlicesBars = set()
+        bobsGivenTotal = 0
+        setOfBobsBars = set()
         
-        for a in A:
-            sumA = sumA + a
+        for oneOfAlicesBars in A:
+            alicesGivenTotal = alicesGivenTotal + oneOfAlicesBars
+            setOfAlicesBars.add(oneOfAlicesBars)
         
-        for b in B:
-            sumB = sumB + b
-            setB.add(b)
+        for oneOfBobsBars in B:
+            bobsGivenTotal = bobsGivenTotal + oneOfBobsBars
+            setOfBobsBars.add(oneOfBobsBars)
             
-        target = (sumA + sumB)//2
+        # fairValue is the target total for Alice and Bob indivdually.
+        # i.e its the average of all the candy bars
+        fairValue = (alicesGivenTotal + bobsGivenTotal)//2
         
-        for a in A:
-        	# this is the tricky bit
-        	# target represents the average of the two sets combined - i.e the target sum for set A and then set B individually. 
-        	# for every item in a, you want to take that out of the sum of set A
-        	# now that the set of A has the selected candy bar removed, you need to find the cooresponding bar in set B that can get A to the target
-            need = (target - (sumA - a)) 
+        for oneOfAlicesUniqueBars in setOfAlicesBars:
+            aliceWithoutOneOfHerBars = alicesGivenTotal - oneOfAlicesUniqueBars
+            
+            neededFromBob = fairValue - aliceWithoutOneOfHerBars
 
-            if need in setB:
-                return [a, need]
+            if neededFromBob in setOfBobsBars:
+                return [oneOfAlicesUniqueBars, neededFromBob]
 ```
