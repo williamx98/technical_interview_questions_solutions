@@ -1,6 +1,6 @@
 # Best Time to Buy and Sell Stock II  
 
-### Rating: [3/5] Good intro into arrays. Somewhat convoluted. Straight forward solution.
+### Rating: [3/5] Good intro into arrays. Straight forward solution.
 
 [Question Link](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/)  
 
