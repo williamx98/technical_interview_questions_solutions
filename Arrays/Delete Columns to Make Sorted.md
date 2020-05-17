@@ -1,5 +1,5 @@
 # Delete Columns to Make Sorted
-### Rating: [2/5] Terribly worded description on LeetCode. Good for practicing matrix traversal.
+### Rating: [0/5] Terribly worded description on LeetCode. Good for practicing matrix traversal.
 
 [Question Link](https://leetcode.com/problems/delete-columns-to-make-sorted/)  
 
